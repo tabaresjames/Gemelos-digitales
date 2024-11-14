@@ -1,0 +1,102 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101728;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* Encabezado */
+/* Estilos para el botón */
+.btn-inicio {
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    margin-left: auto; /* Empuja el botón hacia la derecha */
+    transition: background-color 0.3s; /* Efecto de transición */
+    text-decoration: none; /* Eliminar subrayado */
+    border: none; /* Quitar cualquier borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.btn-inicio:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+/* Encabezado */
+.header {
+    background: linear-gradient(to right, #000000, #3533cd);
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #000000, #3533cd);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto resaltado */
+.highlight-text {
+    color: #ffffff;
+}
+
+/* Secciones */
+.section, .advantages, .sectors {
+    background: linear-gradient(135deg, #000000, #101728);
+    border-radius: 8px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #ffffff;
+}
+
+/* Imagen al lado de la sección de ventajas */
+.side-image {
+    float: right;
+    width: 300px;
+    max-width: 20%;
+    margin: 20px 0 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

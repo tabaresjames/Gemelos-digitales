@@ -1,0 +1,59 @@
+ /* Fondo */
+ body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../img_videos/edificio.webp') center/cover no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Efecto de desenfoque en el contenedor */
+.container {
+    background: linear-gradient(to right, #000000, #3533cd); /* Fondo translúcido */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 2s ease-in-out;
+
+}
+
+/* Efecto de Fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Botón de registro */
+.btn-block {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease;
+}
+.btn-block:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Textos y inputs */
+label {
+    font-weight: bold;
+}
+input.form-control {
+    border-radius: 5px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+}

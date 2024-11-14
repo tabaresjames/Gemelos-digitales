@@ -1,0 +1,72 @@
+body{
+    background-color: #101728;
+    color: white;
+}
+
+header {
+    background: linear-gradient(to right, #000000, #3533cd); /* Degradado de colores */
+}
+
+/* Estilo del menú de navegación */
+.navbar {
+    background: linear-gradient(to right,#3533cd, #000000);
+}
+
+/* Color del texto en el menú */
+.navbar-nav .nav-link {
+    color: white; /* Cambia el color del texto */
+}
+
+/* Color del dropdown menu */
+.dropdown-menu {
+    background-color: #333; /* Color de fondo del menú desplegable */
+}
+
+.dropdown-item {
+    color: white; /* Color del texto en el menú desplegable */
+}
+
+.dropdown-item:hover {
+    background-color: #575757; /* Color de fondo al pasar el ratón sobre el item */
+}
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    height: 60vh; /* Ajusta la altura según prefieras */
+    margin: 5% auto; /* Centra la sección en la página */
+}
+
+.background-video {
+    position: absolute;
+    top: 50%; /* Centra verticalmente el video */
+    left: 50%; /* Centra horizontalmente el video */
+    width: 100%; /* Asegura que el video ocupe todo el ancho */
+    height: auto; /* Mantiene la proporción del video */
+    min-height: 100%; /* Asegura que el video siempre cubra el área */
+    min-width: 100%; /* Asegura que el video siempre cubra el área */
+    transform: translate(-50%, -50%); /* Desplaza el video para centrarlo */
+    object-fit: cover; /* Cubre el área del contenedor */
+    z-index: -1;
+}
+
+.video-overlay {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el texto */
+    justify-content: center; /* Centra verticalmente el texto */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para resaltar el texto */
+    border-radius: 8px;
+    max-width: 100%; /* Ajusta el ancho máximo del contenedor de texto */
+    color: white;
+    text-align: center;
+    z-index: 1; /* Asegura que el texto esté por encima del video */
+}
+
+.img-fluid{
+    max-width: 500px;
+    max-height: 600px;
+}
+
